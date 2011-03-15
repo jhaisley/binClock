@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>binClock</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.0a3.min.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/jquery.mobile-1.0a3.min.js"></script>
+    <script type="text/javascript" src="javascript/clockcore.js"></script>
+	<meta name="viewport" id="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no" />
+	<meta id="touch-event-mode" content="native"/>
+</head>
+<body onload="updateClock()">
+	<div data-role="page" id="wrapper" data-theme="a">
+		<div data-role="header">
+			<h1 id="cheader"><img id="hicon" src="iconsmall.png" alt="">binClock</h1><a href="#aboutwrapper" data-icon="info" data-transition="slide" class="ui-btn-right">About</a>
+		</div>
+            <div data-role="content" id="baseform">
+				<div data-role="content" id="clock">
+                    <table border="0" align="right" cellpadding="5" cellspacing="5">
+                      <tr>
+                        <td></td>
+                        <td><div class='circle' id="H08" style='background-color:#666;'>&nbsp;</div> </td>
+                        <td>&nbsp;</td>
+                        <td><span class='circle' id="M08" style='background:#666;'>&nbsp;</span> </td>
+                    
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><span class='circle' id="H04" style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle' id="M40" style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle' id="M04" style='background:#666;'>&nbsp;</span> </td>
+                     </tr>
+                      <tr>
+                        <td><span class='circle'  id="H20" style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle'  id="H02" style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle' id="M20" style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle' id="M02" style='background:#666;'>&nbsp;</span> </td>
+                      </tr>
+                      <tr>
+                        <td><span class='circle'  id="H10" style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle'  id="H01" style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle' id="M10"style='background:#666;'>&nbsp;</span> </td>
+                        <td><span class='circle' id="M01" style='background:#666;'>&nbsp;</span> </td>
+                         </tr>
+                    </table>
+                </div>
+            </div>
+	</div>
+<div data-role="page" id="aboutwrapper" data-theme="a">
+	<div data-role="header">
+		<a href="#wrapper" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left">Back</a><h1 id="cheader">About binClock</h1>
+	</div>
+	<div data-role="content" id="aboutbox">
+		<div id="aboutcontent">
+			<h3>binClock for BlackBerry PlayBook&trade;</h3>
+			<p>&copy; 2011 by Michael Haisley<br />
+				<p>All Rights Reserved.</p>
+				<p>This software is provided 'as is'. There is NO WARRANTY. Use at your own risk.</p>
+				<p>Licenced under GPL (http://www.gnu.org/licenses/gpl.html)</p>
+				<p>Source code: included in zip</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
